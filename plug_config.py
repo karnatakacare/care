@@ -30,11 +30,19 @@ vitals_observation_device_plugin = Plug(
     configs={}
 )
 
+care_auto_tag_plugin = Plug(
+    name="care_auto_tag",
+    package_name="git+https://github.com/10bedicu/care_auto_tag.git",
+    version="@main",
+    configs={},
+)
+
 plugs = [
     abdm_plugin,
     gateway_device_plugin,
     camera_device_plugin,
-    vitals_observation_device_plugin
+    vitals_observation_device_plugin,
+    care_auto_tag_plugin
 ]
 
 manager = PlugManager(plugs)
