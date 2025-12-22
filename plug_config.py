@@ -37,12 +37,20 @@ care_auto_tag_plugin = Plug(
     configs={},
 )
 
+care_teleicu_plug = Plug(
+    name="care_teleicu",
+    package_name="git+https://github.com/ohcnetwork/care_teleicu.git",
+    version="@master",
+    configs={},
+)
+
 plugs = [
     abdm_plugin,
     gateway_device_plugin,
     camera_device_plugin,
     vitals_observation_device_plugin,
-    care_auto_tag_plugin
+    care_auto_tag_plugin,
+    care_teleicu_plug
 ]
 
 manager = PlugManager(plugs)
