@@ -39,7 +39,7 @@ care_auto_tag_plugin = Plug(
 
 care_teleicu_plug = Plug(
     name="care_teleicu",
-    package_name="git+https://github.com/ohcnetwork/care_teleicu.git",
+    package_name="git+https://github.com/10bedicu/care_teleicu.git",
     version="@master",
     configs={},
 )
